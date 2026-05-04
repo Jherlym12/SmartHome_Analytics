@@ -1,0 +1,43 @@
+.home-container *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.home-content{
+    background-color: #005187;
+}
+
+.home-title{
+    text-align: center;
+    margin-top: 150px;
+    margin-left: 530px;
+    color: #84b6f4;
+}
+
+.home-text {
+    text-align: center;
+    margin-top: 50px;
+    margin-left: 530px;
+    color: white;
+}
+
+.home-logo{
+    width: 500px;
+    height: 500px;
+    margin-top: -450px;
+    margin-left: 80px;
+    border-radius: 15px;
+    border: 2px solid  #84b6f4;
+}
+
+.home-button{
+    width: 123px;
+    height: 45px;
+    background-color: white;
+    border-radius: 5px;
+    border: 2px solid  #84b6f4; 
+    margin-left: 680px;
+    cursor: pointer;
+}
