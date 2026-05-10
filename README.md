@@ -1,70 +1,60 @@
-# Getting Started with Create React App
+# SmartHome Analytics 🏠
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Aplicación desarrollada en React para estimar el valor aproximado de un inmueble según diferentes características como área, número de baños, garaje, segundo piso y ubicación.
 
-## Available Scripts
+# Mejoras Realizadas
 
-In the project directory, you can run:
+## Interfaz Visual
 
-### `npm start`
+* Rediseño visual del Home.
+* Mejor distribución de los elementos.
+* Fondo degradado moderno.
+* Integración de partículas animadas en el fondo.
+* Mejor alineación y centrado del contenido.
+* Mejora visual del botón principal.
+* Efectos hover en botones e imágenes.
+* Sombras y bordes más modernos.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Animaciones
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Se implementaron transiciones suaves entre páginas utilizando Framer Motion:
 
-### `npm test`
+* Fade In / Fade Out.
+* Efecto blur cinematográfico.
+* Zoom suave durante la transición.
+* Eliminación del fondo blanco durante el cambio de vistas.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+## Experiencia de Usuario
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+* Se eliminó el uso del alert tradicional del navegador para mejorar la experiencia visual.
+* Optimización del comportamiento visual del contenedor principal.
+* Mejoras en la fluidez de navegación.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+# Tecnologías Utilizadas
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+* React
+* CSS3
+* JavaScript
+* Framer Motion
 
-### `npm run eject`
+# Instalación
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Clonar el repositorio:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+git clone URL_DEL_REPOSITORIO
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Instalar dependencias:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+npm install
 
-## Learn More
+Ejecutar proyecto:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+npm start
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+# Autores
+Luis Mario Roldán
+Jherly Miled Presiga
+Estiven Betancur
+I.U.Pascual Bravo
+Proyecto académico desarrollado: SmartHome Analytics.
