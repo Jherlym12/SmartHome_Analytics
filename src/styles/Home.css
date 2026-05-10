@@ -1,43 +1,228 @@
-.home-container *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Segoe UI', sans-serif;
 }
 
+.home-container{
+  min-height:100vh;
+
+  background: linear-gradient(135deg,#005187,#84b6f4);
+
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+
+  padding:50px 8%;
+  overflow:hidden;
+
+  position:relative;
+}
+
+/* TEXTO */
+
 .home-content{
-    background-color: #005187;
+  width:55%;
+  color:white;
+
+  animation: aparecerIzq 1s ease;
+  
+  position:relative;
+  z-index:1;
 }
 
 .home-title{
-    text-align: center;
-    margin-top: 150px;
-    margin-left: 530px;
-    color: #84b6f4;
+  font-size:55px;
+  margin-bottom:25px;
+  text-align:center;
+  color:#84b6f4;
+
+  -webkit-text-stroke: 1.5px rgb(255, 255, 255);
 }
 
-.home-text {
-    text-align: center;
-    margin-top: 50px;
-    margin-left: 530px;
-    color: white;
+.home-text{
+  line-height:1.8;
+  font-size:17px;
+  text-align:center;
 }
 
-.home-logo{
-    width: 500px;
-    height: 500px;
-    margin-top: -450px;
-    margin-left: 80px;
-    border-radius: 15px;
-    border: 2px solid  #84b6f4;
+/* PREGUNTA */
+
+.pregunta{
+  margin-top:25px;
+
+  text-align:center;
+
+  font-size:28px;
+  font-weight:bold;
+
+  color:#ffffff;
+
+  text-shadow:0 0 10px rgba(255,255,255,0.3);
 }
+
+/* BOTÓN */
 
 .home-button{
-    width: 123px;
-    height: 45px;
-    background-color: white;
-    border-radius: 5px;
-    border: 2px solid  #84b6f4; 
-    margin-left: 680px;
-    cursor: pointer;
+  margin-top:30px;
+
+  padding:14px 28px;
+
+  border:none;
+  border-radius:12px;
+
+  background:white;
+  color:#005187;
+
+  font-size:16px;
+  font-weight:bold;
+
+  cursor:pointer;
+
+  transition:0.3s;
+
+  display:block;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+.home-button:hover{
+  transform:scale(1.08);
+  background:#dbeeff;
+
+  box-shadow:0 5px 15px rgba(0,0,0,0.3);
+}
+
+/* IMAGEN */
+
+.home-logo{
+  width:420px;
+
+  border-radius:20px;
+
+  box-shadow:0 10px 30px rgba(0,0,0,0.3);
+
+  animation: aparecerDer 1.2s ease;
+
+  position:relative;
+  z-index:1;
+}
+
+.home-logo:hover{
+  transform:scale(1.04);
+  transition:0.3s;
+}
+
+/* ANIMACIONES */
+
+@keyframes aparecerIzq{
+  from{
+    opacity:0;
+    transform:translateX(-50px);
+  }
+
+  to{
+    opacity:1;
+    transform:translateX(0);
+  }
+}
+
+@keyframes aparecerDer{
+  from{
+    opacity:0;
+    transform:translateX(50px);
+  }
+
+  to{
+    opacity:1;
+    transform:translateX(0);
+  }
+}
+
+/* PARTÍCULAS */
+
+.home-container::before{
+  content:"";
+
+  position:absolute;
+
+  top:0;
+  left:0;
+
+  width:100%;
+  height:100%;
+
+  background-image:
+    radial-gradient(white 2px, transparent 1px);
+
+  background-size:30px 30px;
+
+  opacity:0.12;
+
+  animation:moverParticulas 20s linear infinite;
+}
+
+/* ANIMACIÓN */
+
+@keyframes moverParticulas{
+
+  from{
+    transform:translateY(0);
+  }
+
+  to{
+    transform:translateY(-120px);
+  }
+}
+
+/* DISTRIBUCIÓN */
+
+.grupo-doble{
+  display:flex;
+
+  gap:20px;
+
+  justify-content:center;
+
+  margin-bottom:20px;
+}
+
+.campo{
+  flex:1;
+
+  display:flex;
+  flex-direction:column;
+}
+
+/* RADIOS */
+
+.radio-group{
+  margin-top:10px;
+
+  display:flex;
+
+  justify-content:center;
+
+  gap:20px;
+}
+
+/* INPUTS */
+
+.calculadora-container input,
+.calculadora-container select{
+
+  transition:0.3s;
+}
+
+.calculadora-container input:focus,
+.calculadora-container select:focus{
+
+  transform:scale(1.03);
+
+  border:1px solid #005187;
+
+  box-shadow:0 0 10px rgba(0,81,135,0.4);
+
+  outline:none;
 }

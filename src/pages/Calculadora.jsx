@@ -8,6 +8,7 @@ function Calculadora() {
   const [ubicacion, setUbicacion] = useState("");
   const [segundoPiso, setSegundoPiso] = useState("");
   const [garaje, setGaraje] = useState("");
+  const [resultado, setResultado] = useState(null);
 
   const calcularPrecio = () => {
     if (!area || !banos || !segundoPiso || !garaje) {
@@ -29,7 +30,11 @@ function Calculadora() {
     let minimo = Math.round(precio * 0.9);
     let maximo = Math.round(precio * 1.1);
 
-    alert(`$${minimo.toLocaleString()} - $${maximo.toLocaleString()}`);
+    setResultado({
+    minimo,
+    maximo
+    });
+
   };
 
   return (
@@ -85,6 +90,21 @@ function Calculadora() {
         <button onClick={calcularPrecio}>
           Calcular Precio
         </button>
+        {
+        resultado && (
+        <div className="resultado-card">
+        <h2>💰 Valor estimado</h2>
+
+        <p>
+        Desde: <strong>${resultado.minimo.toLocaleString()}</strong>
+        </p>
+
+        <p>
+        Hasta: <strong>${resultado.maximo.toLocaleString()}</strong>
+        </p>
+        </div>
+        )
+      }
       </div>
     </div>
   );

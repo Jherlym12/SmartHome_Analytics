@@ -17,11 +17,12 @@ function Home({ irCalculadora }) {
             consiste en el desarrollo de una calculadora de valor inmobiliario que integra <br />
             diferentes variables para generar una estimación aproximada del valor de <br />
             una vivienda, permitiendo al usuario ingresar datos clave de su inmueble <br />
-            y obtener un resultado útil como guía para la toma de decisiones, ya sea para vender, <br />
-            comprar o simplemente conocer su valor actual, facilitando así un proceso que <br />
-            muchas veces puede resultar complejo… ¿Cuánto vale mi casa?
+            y obtener un resultado útil como guía para la toma de decisiones, ya sea para vender, comprar o simplemente conocer su valor actual,
+            facilitando así un proceso que muchas veces puede resultar complejo… <br />
           </p>
-
+          <h2 className="pregunta">
+            ¿Cuánto vale mi casa?
+          </h2>
           <button className="home-button" onClick={irCalculadora}>
             Calcular Valor
           </button>

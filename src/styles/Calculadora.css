@@ -68,3 +68,39 @@
 .calculadora-container button:hover {
   background-color: #003f6b;
 }
+
+
+/* Resultado calculadora */
+
+.resultado-card{
+  margin-top: 25px;
+  background: white;
+  padding: 20px;
+  border-radius: 15px;
+  animation: aparecer 0.5s ease;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+}
+
+.resultado-card h2{
+  color:#005187;
+  margin-bottom:10px;
+}
+
+.resultado-card p{
+  font-size:18px;
+  margin:10px 0;
+}
+
+/* Animación */
+
+@keyframes aparecer{
+  from{
+    opacity:0;
+    transform:translateY(20px);
+  }
+
+  to{
+    opacity:1;
+    transform:translateY(0);
+  }
+}
